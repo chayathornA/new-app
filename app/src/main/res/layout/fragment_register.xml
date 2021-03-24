@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextRegisterName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/editTextRegisterEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegisterName"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegisterName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegisterName" />
+
+        <EditText
+            android:id="@+id/editTextRegisterPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegisterEmail"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegisterEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegisterEmail"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/buttonRegisterSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/submit"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegisterPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegisterPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegisterPassword" />
+
+        <TextView
+            android:id="@+id/textViewRegisterCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/buttonRegisterSubmit"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegisterSubmit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

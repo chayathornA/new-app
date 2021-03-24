@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextLoginEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/editTextLoginPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLoginEmail"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmail"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword" />
+
+        <TextView
+            android:id="@+id/textViewLoginNewAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/create_new_account"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+            app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
